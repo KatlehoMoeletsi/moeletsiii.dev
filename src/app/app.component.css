@@ -1,0 +1,86 @@
+.message-container {
+    display: flex;               /* Enable Flexbox */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;         /* Center vertically */
+                 /* Take up the full viewport height */
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;            /* Hide overflowing text during animation */
+    border-right: 2px solid black; /* Optional: Typing cursor effect */
+    padding-right: 5px;
+  } 
+  /* Body and html take full height */
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Main container takes full height */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Profile Picture Container - Make it a circle */
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;           /* Set the container's width */
+    height: 150px;          /* Set the container's height */
+    border-radius: 50%;     /* Make the container a circle */
+    overflow: hidden;       /* Ensure anything outside the circle is clipped */
+    margin-bottom: 30px;    /* Space between profile and cards */
+  }
+  
+  /* Profile Picture Styling */
+  .profile-pic {
+    width: 100%;           /* Make the image fill the container */
+    height: 100%;          /* Make the image fill the container */
+    object-fit: cover;     /* Ensure the image fits nicely */
+  }
+  
+  /* Profile Name Styling */
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;      /* Space between the profile pic and name */
+  }
+  
+  /* Cards Container */
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the cards */
+    flex-wrap: wrap;  /* Make the cards responsive */
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
