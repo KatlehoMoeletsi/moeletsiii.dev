@@ -28,24 +28,6 @@ body, html {
   }
   
   /* Profile Picture Container - Make it a circle */
-  .profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 150px;           /* Set the container's width */
-    height: 150px;          /* Set the container's height */
-    border-radius: 50%;     /* Make the container a circle */
-    overflow: hidden;       /* Ensure anything outside the circle is clipped */
-    margin-bottom: 30px;    /* Space between profile and cards */
-  }
-  
-  /* Profile Picture Styling */
-  .profile-pic {
-    width: 100%;           /* Make the image fill the container */
-    height: 100%;          /* Make the image fill the container */
-    object-fit: cover;     /* Ensure the image fits nicely */
-  }
   
   /* Profile Name Styling */
   .profile-name {
@@ -83,4 +65,25 @@ body, html {
     font-size: 14px;
     color: #555;
   }
-  
+  .profile-container {
+    display: flex;
+    align-items: center; /* Vertically aligns the items */
+    gap: 50px;
+    margin-bottom: 140px;
+    
+    /* Adds spacing between the images */
+}
+
+.profile-pic {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the profile picture circular */
+}
+
+.coding-gif {
+    width: auto; /* Maintain the aspect ratio */
+    max-height: 150px;
+    margin-left: 140px;
+    
+    /* Match the height of the profile picture */
+}
