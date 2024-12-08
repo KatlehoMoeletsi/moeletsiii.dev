@@ -1,28 +1,68 @@
+<!-- Rain Effect Container -->
+<div id="rain-container"></div>
 
-
-<div class="message-container">
-  <p>{{ message }}</p> <!-- Bind the message here -->
-</div>
+<!-- Main Content -->
 <div class="container">
-  <!-- Profile Picture Section -->
+
+  <!-- Header Section -->
+  <header class="header">
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dynamic Message Section -->
+  <div class="message-container">
+    <p class="message-text">{{ message }}</p>
+  </div>
+
+  <!-- Profile Section -->
   <div class="profile-container">
     <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic" />
     <img src="https://github.com/KatlehoMoeletsi/KatlehoMoeletsi/raw/main/200w.gif" alt="Coding GIF" class="coding-gif" />
-</div>
+  </div>
 
   <!-- Cards Section -->
   <div class="cards-container">
     <div class="card">
       <h3>Card Title 1</h3>
       <p>Card description goes here. This is some content.</p>
+      <img src="assets/compiler_pic.jpg" alt="Compiler Image" class="card-image" />
     </div>
+
     <div class="card">
       <h3>Card Title 2</h3>
+      <img src="assets/kgadibookcover.jpg" alt="Book Cover" class="card-image" />
       <p>Card description goes here. This is some content.</p>
     </div>
+
     <div class="card">
       <h3>Card Title 3</h3>
       <p>Card description goes here. This is some content.</p>
     </div>
+
+    <div class="card">
+      <h3>Card Title 4</h3>
+      <img src="assets/kgadibookcover.jpg" alt="Book Cover" class="card-image" />
+      <p>Card description goes here. This is some content.</p>
+    </div>
   </div>
+
+  <router-outlet></router-outlet>
 </div>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <p>&copy; 2024 Your Name or Company. All rights reserved.</p>
+  <ul class="footer-links">
+    <li><a href="#privacy">Privacy Policy</a></li>
+    <li><a href="#terms">Terms of Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</footer>
+
